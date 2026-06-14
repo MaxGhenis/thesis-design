@@ -34,3 +34,37 @@
   --font-editorial: "Instrument Serif", serif;
   --font-mono: "IBM Plex Mono", monospace;
 }
+
+/* ── Dark theme ───────────────────────────────────────────────
+ * "Clear Horizon at night." Opt in with <html data-theme="dark">.
+ * Maps the semantic surface/text/border tokens onto the system's own
+ * dark instrument-panel palette; rose accent and horizon blues lift one
+ * step for AA contrast on dark. Light properties are untouched — there
+ * is no prefers-color-scheme auto-switch, so a dark-OS visitor to a
+ * light site still sees the light design. Opt in explicitly per site. */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* surfaces */
+  --canvas: #0B121A;
+  --paper: #0F1A24;
+  --section: #16242F;
+
+  /* borders */
+  --border-soft: #233240;
+  --border-strong: #324656;
+
+  /* text */
+  --text-primary: #E8F0F5;
+  --text-secondary: #9DB1BF;
+  --text-tertiary: #6F8494;
+
+  /* horizon — brighter steps read on dark */
+  --horizon-500: #79AAD6;
+  --horizon-700: #5E97C8;
+
+  /* accent (rose) — lifted for contrast on dark */
+  --accent: #C96B9C;
+  --accent-hover: #E7A6C8;
+  --accent-subtle: #241019;
+}

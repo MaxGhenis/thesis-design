@@ -108,3 +108,19 @@ footer.site { border-top: 1px solid var(--border-soft); padding: 40px 0 64px; co
 footer.site a { color: var(--text-secondary); text-decoration: none; }
 footer.site a:hover { color: var(--accent); }
 footer.site .row { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 10px; }
+
+/* ── Dark theme overrides ─────────────────────────────────────
+ * The rest of base.css is token-driven and follows tokens.css, but a
+ * few spots carry hardcoded light values (translucent header, hero +
+ * flag gradients) and need explicit dark variants. */
+[data-theme="dark"] header.site {
+  background: rgba(15, 26, 36, 0.85);
+}
+[data-theme="dark"] .hero {
+  background:
+    radial-gradient(1100px 460px at 50% -8%, rgba(94, 151, 200, 0.16), transparent 60%),
+    linear-gradient(180deg, #0F1A24 0%, #0C151D 60%, #0B121A 100%);
+}
+[data-theme="dark"] .program.flag {
+  background: linear-gradient(180deg, #172633, #211019);
+}

@@ -53,3 +53,19 @@ git tag v1.1.0
 git push && git push --tags
 # then bump @v1.0.0 → @v1.1.0 in each consumer
 ```
+
+## Dark mode
+
+Opt in per site by setting `data-theme="dark"` on `<html>`:
+
+```html
+<html data-theme="dark">
+```
+
+The dark theme ("Clear Horizon at night") maps the semantic surface/text/border
+tokens onto the system's dark instrument-panel palette and lifts the rose accent
+and horizon blues for contrast. It is **opt-in only** — there is no
+`prefers-color-scheme` auto-switch, so a dark-OS visitor to a light property
+still sees the light design. `base.css` carries dark variants for the few spots
+with hardcoded light values (header, hero, flag card); everything else is
+token-driven and follows automatically.
