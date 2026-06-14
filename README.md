@@ -1,8 +1,9 @@
-# Brier Design
+# Thesis Design
 
-The shared design system for Brier — the **Clear Horizon** palette, type scale, and base
-component styles used across every Brier property (brier.institute, brieralmanac.org, and the
-Next.js apps). Single source of truth: edit here, bump the version, and every consumer updates.
+The shared design system for the Thesis Institute — the **Clear Horizon** palette, type
+scale, and base component styles used across every Thesis Institute property (the static
+sites and the Next.js apps). Single source of truth: edit here, bump the version, and
+every consumer updates.
 
 ## Files
 
@@ -16,8 +17,8 @@ Next.js apps). Single source of truth: edit here, bump the version, and every co
 ### Static sites — via jsDelivr, version-pinned
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MaxGhenis/brier-design@v1.0.0/tokens.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MaxGhenis/brier-design@v1.0.0/base.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MaxGhenis/thesis-design@v1.0.0/tokens.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MaxGhenis/thesis-design@v1.0.0/base.css" />
 ```
 
 Always pin to a tag (e.g. `@v1.0.0`) — never `@main`. That way a token edit never silently
@@ -31,11 +32,11 @@ so they can use `preconnect`; the tokens just reference the families.
 Install as a git dependency and `@import` the Tailwind theme:
 
 ```bash
-bun add github:MaxGhenis/brier-design#v1.1.0
+bun add github:MaxGhenis/thesis-design#v1.1.0
 ```
 ```css
 @import "tailwindcss";
-@import "brier-design/theme.css";   /* full Clear Horizon palette as @theme */
+@import "thesis-design/theme.css";   /* full Clear Horizon palette as @theme */
 ```
 
 `theme.css` carries the full palette in Tailwind's `--color-*` / `--font-*` form so it
