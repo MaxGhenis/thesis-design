@@ -24,8 +24,11 @@
   --color-mist-600: #5E7A8D;
 
   /* Horizon blues */
+  --color-horizon-50: #F2F7FC;
+  --color-horizon-100: #E4EEF8;
   --color-horizon-300: #9FC4E6;
   --color-horizon-500: #5E97C8;
+  --color-horizon-600: #4A82B0;
   --color-horizon-700: #356C99;
 
   /* Rose accent system */

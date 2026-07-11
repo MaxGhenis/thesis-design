@@ -17,7 +17,11 @@
   --text-tertiary: #6B7C89;
 
   /* horizon (cool blue) */
+  --horizon-50: #F2F7FC;
+  --horizon-100: #E4EEF8;
+  --horizon-300: #9FC4E6;
   --horizon-500: #5E97C8;
+  --horizon-600: #4A82B0;
   --horizon-700: #356C99;
 
   /* accent (rose) */
